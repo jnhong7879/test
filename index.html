@@ -69,7 +69,7 @@
         }
         async function predict() {
             // predict can take in an image, video or canvas html element
-            var image = document.getElementById("pocketmon-image")
+            var image = document.getElementById("my-image")
             const prediction = await model.predict(image, false);
             if (prediction[0].probability > 0.2) {
                 labelContainer.childNodes[0].innerHTML = "피카츄 설명"
